@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>Student Registration</h2>
+        <form id="regForm">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob">
+
+            <label>Department:</label>
+            <select id="dept">
+                <option value="">--Select Department--</option>
+                <option value="Artificial Inteligence and Data Science">Artificial Inteligence and Data Science</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Electronics and communication Engineering">Electronics and communication Engineering</option>
+                <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select>
+
+            <label>Address:</label>
+            <textarea id="address" rows="3"></textarea>
+
+            <label>Email ID:</label>
+            <input type="email" id="email" placeholder="example@mail.com">
+
+            <label>Contact Number:</label>
+            <input type="tel" id="contact" placeholder="10-digit number">
+
+            <button type="button" onclick="submitForm()">Submit Registration</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
